@@ -1,0 +1,13 @@
+C:\Users\Owner\workspace\Employees\Employees\bin\Debug\netcoreapp3.1\Employees.exe
+C:\Users\Owner\workspace\Employees\Employees\bin\Debug\netcoreapp3.1\Employees.deps.json
+C:\Users\Owner\workspace\Employees\Employees\bin\Debug\netcoreapp3.1\Employees.runtimeconfig.json
+C:\Users\Owner\workspace\Employees\Employees\bin\Debug\netcoreapp3.1\Employees.runtimeconfig.dev.json
+C:\Users\Owner\workspace\Employees\Employees\bin\Debug\netcoreapp3.1\Employees.dll
+C:\Users\Owner\workspace\Employees\Employees\bin\Debug\netcoreapp3.1\Employees.pdb
+C:\Users\Owner\workspace\Employees\Employees\obj\Debug\netcoreapp3.1\Employees.AssemblyInfoInputs.cache
+C:\Users\Owner\workspace\Employees\Employees\obj\Debug\netcoreapp3.1\Employees.AssemblyInfo.cs
+C:\Users\Owner\workspace\Employees\Employees\obj\Debug\netcoreapp3.1\Employees.csproj.CoreCompileInputs.cache
+C:\Users\Owner\workspace\Employees\Employees\obj\Debug\netcoreapp3.1\Employees.dll
+C:\Users\Owner\workspace\Employees\Employees\obj\Debug\netcoreapp3.1\Employees.pdb
+C:\Users\Owner\workspace\Employees\Employees\obj\Debug\netcoreapp3.1\Employees.genruntimeconfig.cache
+C:\Users\Owner\workspace\Employees\Employees\obj\Debug\netcoreapp3.1\Employees.csprojAssemblyReference.cache
