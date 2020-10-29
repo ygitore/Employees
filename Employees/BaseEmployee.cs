@@ -12,6 +12,7 @@ namespace Employees
         public string Email { get; set; }
         public string Position { get; set; }
         public DateTime EmploymentDate { get; set; }
+        public abstract double GetSalary();        
         public void FullName()
         {
             Console.WriteLine("{0} {1}", FirstName, LastName);

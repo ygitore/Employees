@@ -12,7 +12,7 @@ namespace Inheritance
        
         public double HourlySalary { get; set; }
         public int TotalHoursWorked { get; set; }        
-        public double GetSalary()
+        public override double GetSalary()
         {
             return this.HourlySalary * this.TotalHoursWorked;
         }

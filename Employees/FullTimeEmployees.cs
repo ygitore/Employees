@@ -10,7 +10,7 @@ namespace Inheritance
     class FullTimeEmployees:BaseEmployee
     {
         public double AnualSalary { get; set; }
-        public double GetSalary()
+        public override double GetSalary()
         {
             return AnualSalary / 12;
         }
