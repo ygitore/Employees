@@ -21,7 +21,7 @@ namespace Employees
                 {
                     throw new Exception("FirstName is required");
                 }
-                this._firstName = FirstName;
+                this._firstName = value;
             }
         }
         public string LastName
@@ -33,7 +33,7 @@ namespace Employees
                 {
                     throw new Exception("LastName is required");
                 }
-                this._lastName = LastName;
+                this._lastName = value;
             }
         }
         public string Email
@@ -45,7 +45,7 @@ namespace Employees
                 {
                     throw new Exception("Email is required");
                 }
-                this._email = Email;
+                this._email = value;
             }
         }
         public string Position
@@ -57,7 +57,7 @@ namespace Employees
                 {
                     throw new Exception("Position is required");
                 }
-                this._position = Position;
+                this._position = value;
             }
         }
         public string EmploymentDate
@@ -69,7 +69,7 @@ namespace Employees
                 {
                     throw new Exception("Employment date is required");
                 }
-                this._employmentDate = EmploymentDate;
+                this._employmentDate = value;
             }
         }
 
