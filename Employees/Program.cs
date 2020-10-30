@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Employees;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,7 +26,7 @@ namespace Inheritance
             Console.WriteLine("<---------------------------->");
             ContractEmployees cte = new ContractEmployees()
             {
-                Id = 101,
+                Id = 102,
                 FirstName = "Smith",
                 LastName = "peter",
                 Email = "smithpeter@gmail.com",
@@ -34,10 +35,40 @@ namespace Inheritance
                 Position = "Cyber Security Specialist",
                 EmploymentDate = new DateTime(2015, 09, 13)
             };
+            ContractEmployees cte2 = new ContractEmployees()
+            {
+                Id = 103,
+                FirstName = "Semon",
+                LastName = "David",
+                Email = "semon@gmail.com",
+                TotalHoursWorked = 35,
+                HourlySalary = 45,
+                Position = "Cyber Security Specialist",
+                EmploymentDate = new DateTime(2016, 09, 13)
+            };
             cte.FullName();
             Console.WriteLine("Salary", cte.GetSalary());
+
+            A a = new B();
+            a.print();
+
             Console.Read();
         }
 
+
+    }
+    class A
+    {
+        public virtual void print()
+        {
+            Console.WriteLine("A");
+        }
+    }
+    class B:A
+    {
+        public new void print()
+        {
+            Console.WriteLine("B");
+        }
     }
 }

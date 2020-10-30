@@ -16,5 +16,6 @@ namespace Inheritance
         {
             return this.HourlySalary * this.TotalHoursWorked;
         }
+        
     }
 }
