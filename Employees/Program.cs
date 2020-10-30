@@ -38,7 +38,7 @@ namespace Inheritance
             ContractEmployees cte2 = new ContractEmployees()
             {
                 Id = 103,
-                FirstName = "Semon",
+                FirstName = "simon",
                 LastName = "David",
                 Email = "semon@gmail.com",
                 TotalHoursWorked = 35,
@@ -49,26 +49,7 @@ namespace Inheritance
             cte.FullName();
             Console.WriteLine("Salary", cte.GetSalary());
 
-            A a = new B();
-            a.print();
-
             Console.Read();
-        }
-
-
-    }
-    class A
-    {
-        public virtual void print()
-        {
-            Console.WriteLine("A");
-        }
-    }
-    class B:A
-    {
-        public new void print()
-        {
-            Console.WriteLine("B");
         }
     }
 }

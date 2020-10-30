@@ -10,14 +10,14 @@ namespace Employees
         private string _lastName;
         private string _email;
         private string _position;
-        private string _employmentDate;
+        private DateTime _employmentDate;
         public int Id { get; set; }
         public string FirstName 
         { 
             get { return this._firstName;  }
             set
             {
-                if (string.IsNullOrEmpty(this._firstName))
+                if (string.IsNullOrEmpty(value))
                 {
                     throw new Exception("FirstName is required");
                 }
@@ -29,7 +29,7 @@ namespace Employees
             get { return this._firstName; }
             set
             {
-                if (string.IsNullOrEmpty(this._lastName))
+                if (string.IsNullOrEmpty(value))
                 {
                     throw new Exception("LastName is required");
                 }
@@ -41,7 +41,7 @@ namespace Employees
             get { return this._email; }
             set
             {
-                if (string.IsNullOrEmpty(this._email))
+                if (string.IsNullOrEmpty(value))
                 {
                     throw new Exception("Email is required");
                 }
@@ -53,22 +53,18 @@ namespace Employees
             get { return this._position; }
             set
             {
-                if (string.IsNullOrEmpty(this._position))
+                if (string.IsNullOrEmpty(value))
                 {
                     throw new Exception("Position is required");
                 }
                 this._position = value;
             }
         }
-        public string EmploymentDate
+        public DateTime EmploymentDate
         {
             get { return this._employmentDate; }
             set
             {
-                if (string.IsNullOrEmpty(this._employmentDate))
-                {
-                    throw new Exception("Employment date is required");
-                }
                 this._employmentDate = value;
             }
         }
