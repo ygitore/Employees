@@ -4,6 +4,12 @@ using System.Text;
 
 namespace Employees
 {
+    public enum Gender:short
+    {
+        Female = 1,
+        Male,
+        Unknown
+    }
     abstract class BaseEmployee
     {
         private string _firstName;
@@ -12,6 +18,21 @@ namespace Employees
         private string _position;
         private DateTime _employmentDate;
         public int Id { get; set; }
+        public Gender Gender { get; set; }
+        public string GetGender(Gender gender)
+        {
+            switch (gender)
+            {
+                case Gender.Female:
+                    return "Female";
+                case Gender.Male:
+                    return "Male";
+                case Gender.Unknown:
+                    return "Unknow";
+                default:
+                    return "Invalid choice";
+            }
+        }
         public string FirstName 
         { 
             get { return this._firstName;  }
@@ -72,7 +93,7 @@ namespace Employees
         public abstract double GetSalary();        
         public void FullName()
         {
-            Console.WriteLine("{0} {1}", FirstName, LastName);
+            Console.Write("{0} {1} ", FirstName, LastName);
         }
     }
 }
