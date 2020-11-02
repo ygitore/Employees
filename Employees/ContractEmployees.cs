@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Inheritance
+namespace ContractEmployee
 {
-    class ContractEmployees:BaseEmployee
+    class ContractEmployees : BaseEmployee, IComparable<ContractEmployees> 
     {
        
         public double HourlySalary { get; set; }
@@ -15,6 +15,11 @@ namespace Inheritance
         public override double GetSalary()
         {
             return this.HourlySalary * this.TotalHoursWorked;
+        }
+        
+        public int CompareTo(ContractEmployees emp)
+        {
+            return this.FirstName.CompareTo(emp.FirstName);
         }
         
     }

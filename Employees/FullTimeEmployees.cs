@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Inheritance
+namespace FullTimeEmployee
 {
-    class FullTimeEmployees:BaseEmployee
+    class FullTimeEmployees : BaseEmployee
     {
         public double AnualSalary { get; set; }
         public override double GetSalary()
